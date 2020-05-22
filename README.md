@@ -1,4 +1,4 @@
-# Jupyter Legal-Notice
+# Jupyter Legal Notice
 
 To display an legal notice and the privacy policy in the menu bar, this extension can be added to JupyterLab.
 

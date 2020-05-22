@@ -2,6 +2,8 @@
 
 To display an legal notice and the privacy policy in the menu bar, this extension can be added to JupyterLab.
 
+![Screenshot](/screenshot.png)
+
 Furthermore, this extension use existing legal notice pages of JupyterHub, as described in [jupyterhub-legal-notice](https://github.com/DL-MIN/jupyterhub-legal-notice).
 
 

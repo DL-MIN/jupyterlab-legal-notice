@@ -1,0 +1,39 @@
+{
+  "name": "@DL-MIN/jupyterlab-legal-notice",
+  "version": "0.1.0",
+  "description": "Add a contact menu with legal notice and privacy policy.",
+  "keywords": [
+    "jupyter",
+    "jupyterlab",
+    "jupyterlab-extension"
+  ],
+  "author": "Lars Thoms",
+  "files": [
+    "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
+    "style/**/*.{css,eot,gif,html,jpg,json,png,svg,woff2,ttf}"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "style": "style/index.css",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf lib tsconfig.tsbuildinfo",
+    "link": "jupyter labextension link . --no-build",
+    "prepare": "jlpm run clean && jlpm run build"
+  },
+  "dependencies": {
+    "@jupyterlab/application": "^2.0.0",
+    "@jupyterlab/mainmenu": "^2.0.0",
+    "@lumino/widgets": "^1.9.3"
+  },
+  "devDependencies": {
+    "rimraf": "~3.0.0",
+    "typescript": "~3.7.5"
+  },
+  "sideEffects": [
+    "style/*.css"
+  ],
+  "jupyterlab": {
+    "extension": true
+  }
+}
